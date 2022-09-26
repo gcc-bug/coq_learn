@@ -1,3 +1,3 @@
 # coq_learn
 
- this paroject is created in order to learn coq.
+ this project is created in order to learn coq.
