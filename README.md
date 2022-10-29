@@ -30,4 +30,8 @@ https://www.cs.cornell.edu/courses/cs3110/2018sp/a5/coq-tactics-cheatsheet.html
 # 一些个人规范
 1. assert的sub global 用{}作为bullet
 2. induction 和 deduction的bullet等级不要超过2 层。如果一定要超过，考虑lemma。
-3. 
+3. 命名规范
+4. 尽可能使用assert，而不是replace.
+5. 新的函数definition 或者fixpoint 之后，要加上example 方便阅读。
+6. 证明之前先search.
+7. 不同抽象等级的变量分别intros.
