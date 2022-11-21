@@ -43,8 +43,8 @@ CAMLFLAGS         := $(COQMF_CAMLFLAGS)
 HASNATDYNLINK     := $(COQMF_HASNATDYNLINK)
 OCAMLWARN         := $(COQMF_WARN)
 
-Makefile.conf: _CoqProject
-	coq_makefile -f _CoqProject c1.v c2.v c3.v c4.v ch.v test.v try.v -o Makefile
+Makefile.conf: /usr/gaodc/coq_learn/_CoqProject
+	coq_makefile -f /usr/gaodc/coq_learn/_CoqProject -o Makefile
 
 # This file can be created by the user to hook into double colon rules or
 # add any other Makefile code he may need
@@ -847,9 +847,9 @@ $(addsuffix .d,$(MLPACKFILES)): %.mlpack.d: %.mlpack
 # If this makefile is created using a _CoqProject we have coqdep get
 # options from it. This avoids argument length limits for pathological
 # projects. Note that extra options might be on the command line.
-VDFILE_FLAGS:=$(if _CoqProject,-f _CoqProject,) $(CMDLINE_COQLIBS) $(CMDLINE_VFILES)
+VDFILE_FLAGS:=$(if /usr/gaodc/coq_learn/_CoqProject,-f /usr/gaodc/coq_learn/_CoqProject,) $(CMDLINE_COQLIBS) $(CMDLINE_VFILES)
 
-$(VDFILE): _CoqProject $(VFILES)
+$(VDFILE): /usr/gaodc/coq_learn/_CoqProject $(VFILES)
 	$(SHOW)'COQDEP VFILES'
 	$(HIDE)$(COQDEP) -vos -dyndep var $(VDFILE_FLAGS) $(redir_if_ok)
 

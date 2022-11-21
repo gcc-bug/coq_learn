@@ -534,3 +534,4 @@ Definition mult (n m : cnat) : cnat:=
   fun (X: Type) (f: X->X) => n X (m X f).
 
 Compute mult three zero nat S O.
+End Church .

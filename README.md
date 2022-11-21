@@ -18,15 +18,14 @@ https://www.cs.cornell.edu/courses/cs3110/2018sp/a5/coq-tactics-cheatsheet.html
 # notes
 
 1. 等号两边消除，保持格式一致
-
-2. 将格式类似的作为lemma  
-
+2. 将格式类似的作为lemma
 3. destruct 也可以用在
    (let (x, y) := h in let (lx, ly) := split t in (x :: lx, y :: ly)) = (l1, l2)
    这样复杂式子中的解耦合。 具体为依次destruct h. destruct (split t).
-   
+   也可以用于context中的命题为False.还可以用在exists 中，如**H**:**exists** **x** **: **nat**,**m** =** **n** +x. destruct H as [x H]。就可以把x分离。
+
    ## import library:
-   
+
    From Coq Require Import Nat .
    https://www.coder.work/article/6672855
    https://stackoverflow.com/questions/36621752/how-to-import-the-library-coq-arith-peanonat-in-coq

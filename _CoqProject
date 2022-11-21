@@ -1,6 +1,7 @@
 -R . LF
-c1.v
-c2.v
-c3.v
-c4.v
-test.v
+/usr/gaodc/coq_learn/c1.v
+/usr/gaodc/coq_learn/c2.v
+/usr/gaodc/coq_learn/c3.v
+/usr/gaodc/coq_learn/c4.v
+/usr/gaodc/coq_learn/c5.v
+/usr/gaodc/coq_learn/test.v
